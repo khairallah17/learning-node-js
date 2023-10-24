@@ -9,7 +9,7 @@ const port = 4000
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
-app.use("/", productsRoute)
+app.use("/api", productsRoute)
 
 mongoose.connect("mongodb+srv://tp-bousselham:7VJpLC6ChwchUqIo@cluster0.hoebmxd.mongodb.net/?retryWrites=true&w=majority").then(() => {
     console.log("connected successfully")

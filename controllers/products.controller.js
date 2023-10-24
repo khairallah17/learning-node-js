@@ -3,7 +3,7 @@ const Products = require("../models/Products")
 async function getAllProducts (req, res) {
 
     const products = await Products.find()
-    return res.json(products)
+    return res.status(200).json(products)
 
 }
 
